@@ -40,7 +40,6 @@ steps:
         TARGET: <<parameters.target>>
         BREAK_ON_RISK_RATING: <<parameters.break_on_risk_rating>>
         MAX_WAIT_MINUTES: <<parameters.max_wait_minutes>>
-        EXTRA: <<parameters.extra>>
       name: Run a scan
       command: <<include(scripts/scan.sh)>>
   - run:
