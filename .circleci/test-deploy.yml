@@ -36,6 +36,15 @@ workflows:
       # Test your orb's commands in a custom job and test your orb's jobs directly as a part of this workflow.
       - command-test:
           filters: *filters
+      - ostorlab-circleci/ostorlab:
+          ostorlab_api_key: "test"
+          scan_profile: "test"
+          asset_type: "test"
+          scan_title: "test"
+          target: "test"
+          break_on_risk_rating: "test"
+          max_wait_minutes: "test"
+          extra: "test"
       # The orb must be re-packed for publishing, and saved to the workspace.
       - orb-tools/pack:
           filters: *release-filters
