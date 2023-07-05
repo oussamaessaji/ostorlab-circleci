@@ -39,7 +39,7 @@ workflows:
           scan_profile: "fast_scan"
           asset_type: "android-apk"
           scan_title: "test"
-          target: "files/app.apk"
+          target: "src/files/app.apk"
           break_on_risk_rating: "HIGH"
           max_wait_minutes: 5
       # The orb must be re-packed for publishing, and saved to the workspace.
