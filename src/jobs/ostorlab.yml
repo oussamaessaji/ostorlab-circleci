@@ -46,3 +46,6 @@ steps:
         EXTRA: <<parameters.extra>>
       name: Run a scan
       command: <<include(scripts/scan.sh)>>
+  - run:
+      name: Scan Id
+      command: echo ${SCAN_ID}
